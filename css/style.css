@@ -1,112 +1,104 @@
+/* Custom font for the project */
 @font-face {
   font-family: 'Avenir Next Condensed';
   src: url('https://s3.amazonaws.com/learn-verified/Avenir+Next+Condensed.ttc');
 }
 
+/* Reset default margins and padding for all elements */
 * {
   margin: 0;
   padding: 0;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+  box-sizing: border-box; /* Ensures padding and border are included in element dimensions */
 }
 
+/* Body styling for the entire page */
 body {
-  background: rgb(79,79,79); /* Old browsers */
-  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzRmNGY0ZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjU3JSIgc3RvcC1jb2xvcj0iIzEzMTMxMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxMzEzMTMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-  background: -moz-linear-gradient(top,  rgba(79,79,79,1) 0%, rgba(19,19,19,1) 57%, rgba(19,19,19,1) 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(79,79,79,1)), color-stop(57%,rgba(19,19,19,1)), color-stop(100%,rgba(19,19,19,1))); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top,  rgba(79,79,79,1) 0%,rgba(19,19,19,1) 57%,rgba(19,19,19,1) 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top,  rgba(79,79,79,1) 0%,rgba(19,19,19,1) 57%,rgba(19,19,19,1) 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(top,  rgba(79,79,79,1) 0%,rgba(19,19,19,1) 57%,rgba(19,19,19,1) 100%); /* IE10+ */
-  background: linear-gradient(to bottom,  rgba(79,79,79,1) 0%,rgba(19,19,19,1) 57%,rgba(19,19,19,1) 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4f4f4f', endColorstr='#131313',GradientType=0 ); /* IE6-8 */
-  font-family: 'Avenir Next Condensed', 'Arial Narrow', sans-serif;
-  font-size: 100%;
+  background: rgb(79, 79, 79); /* Fallback for older browsers */
+  background: linear-gradient(
+    to bottom,
+    rgba(79, 79, 79, 1) 0%,
+    rgba(19, 19, 19, 1) 57%,
+    rgba(19, 19, 19, 1) 100%
+  ); /* Gradient background */
+  font-family: 'Avenir Next Condensed', 'Arial Narrow', sans-serif; /* Font stack */
+  font-size: 100%; /* Base font size */
+  color: white; /* Default text color */
 }
 
+/* Styling for the main heading (HAPPY) */
 h1 {
-  font-size: 12.25em;
-  line-height: 1em;
-  letter-spacing: .03em;
-  margin-bottom: 2px;
+  font-size: 12.25em; /* Large font size for emphasis */
+  line-height: 1em; /* Tight line spacing */
+  letter-spacing: 0.03em; /* Slight letter spacing for readability */
+  margin-bottom: 2px; /* Small bottom margin */
 }
 
+/* Styling for secondary headings */
 h2 {
-  font-size: 5.1em;
-  line-height: 1em;
-  letter-spacing: .03em;
-  margin-bottom: 2px;
+  font-size: 6em; /* Smaller than h1 but still large */
+  line-height: 1.2em; /* Slightly looser line spacing */
+  letter-spacing: 0.03em; /* Consistent letter spacing */
+  margin-bottom: 10px; /* Spacing below the heading */
 }
 
+/* Styling for tertiary headings */
 h3 {
-  font-weight: normal;
-  letter-spacing: .3em;
-  margin-bottom: 18px;
-  line-height: 1em;
+  font-size: 2.5em; /* Medium size for subheadings */
+  line-height: 1.2em; /* Balanced line height */
+  letter-spacing: 0.03em; /* Consistent letter spacing */
+  margin-bottom: 10px; /* Spacing below the heading */
 }
 
+/* Styling for smaller headings */
 h4 {
-  font-weight: normal;
-  font-size: .7em;
-  letter-spacing: .4em;
-  margin-bottom: 9px;
-  line-height: 1em;
+  font-size: 1.5em; /* Smaller size for minor headings */
+  line-height: 1.2em; /* Balanced line height */
+  letter-spacing: 0.03em; /* Consistent letter spacing */
+  margin-bottom: 10px; /* Spacing below the heading */
 }
 
+/* Paragraph styling for legal text */
 p {
-  font-size: .9em;
-  line-height: 1.8em;
-  letter-spacing: .103em;
-  margin-bottom: 15px;
+  font-size: 1.2em; /* Slightly larger than default text */
+  line-height: 1.5em; /* Comfortable line spacing for readability */
+  margin-bottom: 20px; /* Spacing below paragraphs */
 }
 
+/* Span styling for website links */
 span {
-  display: inline-block;
-  font-size: 1em;
-  line-height: 1em;
-  letter-spacing: .35em;
-  vertical-align: top;
-  padding-top: 10px;
+  font-size: 1em; /* Default size */
+  font-weight: bold; /* Bold text for emphasis */
 }
 
+/* Image styling for logos */
 img {
-  display: inline-block;
-  margin: 0 40px;
+  max-width: 100%; /* Ensures images are responsive */
+  height: auto; /* Maintains aspect ratio */
+  margin-bottom: 20px; /* Spacing below images */
 }
 
+/* Special styling for the website link */
+#website {
+  color: #ffcc00; /* Highlight color for the link */
+}
+
+/* Wrapper to center content and control width */
 .wrapper {
-  width: 800px;
-  margin: 0 auto;
-  /*background: url("https://s3.amazonaws.com/learn-verified/MOCKUP.jpg");*/
+  width: 80%; /* Takes up 80% of the screen width */
+  max-width: 1200px; /* Maximum width for larger screens */
+  margin: 0 auto; /* Centers the wrapper */
+  padding: 20px; /* Adds some padding inside the wrapper */
 }
 
+/* Album cover styling */
 .album {
-  width: 100%;
-  height: 800px;
-  margin: 20px 0;
-  border: 1px solid black;
-  -moz-box-shadow: 0 2px 3px black;
-  -webkit-box-shadow: 0 2px 3px black;
-  box-shadow: 0 2px 3px black;
+  text-align: center; /* Centers all text inside */
+  margin-bottom: 40px; /* Spacing between album sections */
 }
 
-#front {
-  background: url("https://s3.amazonaws.com/learn-verified/cover.jpg");
-  background-size: 100%;
-  text-align: center;
-} 
-
-#back {
-  background: rgba(247,211,27,1);
-  text-align: center;
-  padding: 130px 35px 35px;
-}
-
+/* Title box styling for the front cover */
 #title-box {
-  width: 252px;
-  height: 165px;
-  background: rgba(247,211,27,1);
-  margin-left: 163px;
-  padding-top: 25px;
+  padding: 20px; /* Adds padding inside the box */
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  border-radius: 10px; /* Rounded corners for a modern look */
 }
